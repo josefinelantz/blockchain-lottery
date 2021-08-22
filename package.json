@@ -1,0 +1,40 @@
+{
+  "name": "blockchain-lottery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepush": "npm run test && npm run audit",
+    "audit": "node node_modules/better-npm-audit audit",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josefinelantz/blockchain-lottery.git"
+  },
+  "keywords": [],
+  "author": "Josefine Lantz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josefinelantz/blockchain-lottery/issues"
+  },
+  "homepage": "https://github.com/josefinelantz/blockchain-lottery#readme",
+  "dependencies": {
+    "@ethereumjs/block": "^3.4.0",
+    "@ethereumjs/common": "^2.4.0",
+    "@ethereumjs/tx": "^3.3.0",
+    "@ethereumjs/vm": "^5.5.2",
+    "@metamask/safe-event-emitter": "^2.0.0",
+    "@truffle/hdwallet-provider": "^1.0.37",
+    "better-npm-audit": "^3.3.0",
+    "dotenv": "^10.0.0",
+    "elliptic": "^6.5.4",
+    "ganache": "^6.4.4",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^9.1.0",
+    "node-fetch": "^3.0.0-beta.9",
+    "solc": "^0.8.7-fixed",
+    "web3": "^1.5.2",
+    "y18n": "^5.0.8"
+  }
+}
